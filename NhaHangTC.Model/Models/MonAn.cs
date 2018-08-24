@@ -45,7 +45,7 @@ namespace NhaHangTC.Model.Models
         public int MALOAI { set; get; }
 
         [ForeignKey("MALOAI")]
-        public virtual LoaiMonAn LoaiMonAn { set; get; }
+        public virtual Ban LoaiMonAn { set; get; }
 
         [Required]
         public int MAHINHANH { set; get; }
