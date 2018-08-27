@@ -28,7 +28,7 @@ namespace NhaHangTC.Model.Models
         public string GIOITHIEU { set; get; }
 
  
-        [MaxLength(350)]
+        [MaxLength(200)]
         public string DIACHI { set; get; }
 
         public virtual IEnumerable<NhaHang> NhaHangs { set; get; }

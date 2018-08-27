@@ -29,7 +29,7 @@ namespace NhaHangTC.Model.Models
         public bool TRANGTHAI { set; get; }
 
         [Required]
-        [MaxLength(200)]
+        [MaxLength(350)]
         public string DIACHINHAN { set; get; }
 
         public virtual IEnumerable<GioHang> GioHangs { set; get; }

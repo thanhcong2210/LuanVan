@@ -1,8 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace NhaHangTC.Model.Models
 {
+
     [Table("BAN")]
     public class Ban
     {
@@ -11,7 +17,7 @@ namespace NhaHangTC.Model.Models
         public int MABAN { set; get; }
 
 
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string TENTANG { set; get; }
 
 

@@ -21,19 +21,18 @@ namespace NhaHangTC.Model.Models
         public string TENGOI { set; get; }
 
         [Required]
-        [MaxLength(50)]
-        public string DONGIA { set; get; }
+        public float DONGIA { set; get; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(1500)]
         public string MOTA { set; get; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(1500)]
         public string CACHLAM { set; get; }
 
         [Required]
-        public DateTime NGAYTAO { set; get; }
+        public DateTime NGAYTAOMOI { set; get; }
 
         [Required]
         public int MADVTINH { set; get; }

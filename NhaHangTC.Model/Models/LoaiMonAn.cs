@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NhaHangTC.Model.Models
 {
     [Table("LOAIMONAN")]
-    public class Ban
+    public class LoaiMonAn
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -19,6 +19,6 @@ namespace NhaHangTC.Model.Models
         [MaxLength(20)]
         public string TENLOAI { set; get; }
 
-        public virtual IEnumerable<Ban> LoaiMonAns { set; get; }
+        public virtual IEnumerable<LoaiMonAn> LoaiMonAns { set; get; }
     }
 }

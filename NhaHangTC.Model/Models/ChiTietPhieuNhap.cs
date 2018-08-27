@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NhaHangTC.Model.Models
 {
 
-    [Table("MenuGroups")]
+    [Table("CHITIETPHIEUNHAP")]
     public class ChiTietPhieuNhap
     {
         [Key]

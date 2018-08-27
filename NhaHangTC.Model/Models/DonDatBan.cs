@@ -18,7 +18,7 @@ namespace NhaHangTC.Model.Models
         public int MADONDAT { set; get; }
 
         [Required]
-        public decimal SOLUONGNGUOI { set; get; }
+        public int SOLUONGNGUOI { set; get; }
 
         [Required]
         public DateTime NGAYDEN { set; get; }

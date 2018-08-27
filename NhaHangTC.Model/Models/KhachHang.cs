@@ -18,11 +18,11 @@ namespace NhaHangTC.Model.Models
         public int MAKH { set; get; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(100)]
         public string HOTEN_KH { set; get; }
 
         [Required]
-        [MaxLength(100)]
+        [MaxLength(200)]
         public string DIACHI_KH { set; get; }
 
         [Required]
@@ -30,19 +30,17 @@ namespace NhaHangTC.Model.Models
         public string EMAIL_KH { set; get; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(11)]
         public string SDT_KH { set; get; }
 
         [Required]
-        [MaxLength(50)]
-        public DateTime NAMSINH_KH { set; get; }
+        public DateTime NGAYSINH_KH { set; get; }
 
         [Required]
-        [MaxLength(50)]
         public bool GIOITINH_KH { set; get; }
 
-        [MaxLength(50)]
-        public string TAIKHOAN_KH { set; get; }
+        [MaxLength(20)]
+        public string TENDANGNHAP_KH { set; get; }
  
         [MaxLength(50)]
         public string MATKHAU_KH { set; get; }

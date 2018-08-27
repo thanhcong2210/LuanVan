@@ -14,7 +14,7 @@ namespace NhaHangTC.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { set; get; }
+        public int MAPHIEUNHAP { set; get; }
 
         [Required]
         public DateTime NGAYNHAP { set; get; }

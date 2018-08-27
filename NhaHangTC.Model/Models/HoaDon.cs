@@ -33,7 +33,7 @@ namespace NhaHangTC.Model.Models
         public string GHICHU { set; get; }
 
         [Required]
-        public Decimal GIAMGIA { set; get; }
+        public float GIAMGIA { set; get; }
 
         [Required]
         public int MABAN { set; get; }

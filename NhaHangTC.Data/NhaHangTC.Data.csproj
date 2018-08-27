@@ -58,7 +58,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BanRepository.cs" />
     <Compile Include="Repositories\ChucVuRepository.cs" />
-    <Compile Include="Repositories\LoaiMonAnRepository.cs" />
     <Compile Include="Repositories\NhaHangRepository.cs" />
     <Compile Include="Repositories\TangRepository.cs" />
   </ItemGroup>

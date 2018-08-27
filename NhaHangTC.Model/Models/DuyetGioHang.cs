@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NhaHangTC.Model.Models
 {
 
-    [Table("MenuGroups")]
+    [Table("DUYETGIOHANG")]
     public class DuyetGioHang
     {
         [Key]
@@ -30,11 +30,11 @@ namespace NhaHangTC.Model.Models
 
         [Required]
         [MaxLength(50)]
-        public string NGAYDUYET { set; get; }
+        public DateTime NGAYDUYET { set; get; }
 
         [Required]
         [MaxLength(50)]
-        public string TRANGTHAIDUYET { set; get; }
+        public bool TRANGTHAIDUYET { set; get; }
 
         public virtual IEnumerable<DuyetGioHang> DuyetGioHangs { set; get; }
     }

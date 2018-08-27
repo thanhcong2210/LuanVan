@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NhaHangTC.Model.Models
 {
-
+    [Table("NHANVIEN")]
     public class NhanVien
     {
         [Key]
@@ -14,7 +14,7 @@ namespace NhaHangTC.Model.Models
 
         [Required]
         [MaxLength(100)]
-        public string HOTEN { set; get; }
+        public string HOTEN_NV { set; get; }
 
         [Required]
         [MaxLength(10)]
@@ -26,13 +26,13 @@ namespace NhaHangTC.Model.Models
 
         [Required]
         [MaxLength(200)]
-        public string EMAIL { set; get; }
+        public string EMAIL_NV { set; get; }
 
         [Required]
-        public DateTime NAMSINH { set; get; }
+        public DateTime NGAYSINH_NV { set; get; }
 
         [Required]
-        public bool GIOITINH { set; get; }
+        public bool GIOITINH_NV { set; get; }
 
         [Required]
         public int MANHAHANG { set; get; }
