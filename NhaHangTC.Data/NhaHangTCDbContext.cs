@@ -29,7 +29,7 @@ namespace NhaHangTC.Data
         public DbSet<HoaDon> HoaDons { set; get; }
         public DbSet<KhachHang> KhachHangs { set; get; }
         public DbSet<LoaiKhachHang> LoaiKhachHangs { set; get; }
-        public DbSet<Ban> LoaiMonAns { set; get; }
+        public DbSet<LoaiMonAn> LoaiMonAns { set; get; }
         public DbSet<MonAn> MonAns { set; get; }
         public DbSet<NhaCungCap> NhaCungCaps { set; get; }
         public DbSet<NhaHang> NhaHangs { set; get; }

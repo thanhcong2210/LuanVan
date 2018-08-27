@@ -58,8 +58,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BanRepository.cs" />
     <Compile Include="Repositories\ChucVuRepository.cs" />
+    <Compile Include="Repositories\DonViTinhRepository.cs" />
+    <Compile Include="Repositories\HinhAnhRepository.cs" />
+    <Compile Include="Repositories\KhachHangRepository.cs" />
+    <Compile Include="Repositories\LoaiKhachHangRepository.cs" />
+    <Compile Include="Repositories\LoaiMonAnRepository.cs" />
+    <Compile Include="Repositories\MonAnRepository.cs" />
+    <Compile Include="Repositories\NhaCungCapRepository.cs" />
     <Compile Include="Repositories\NhaHangRepository.cs" />
+    <Compile Include="Repositories\NhanVienRepository.cs" />
+    <Compile Include="Repositories\TaiKhoanRepository.cs" />
     <Compile Include="Repositories\TangRepository.cs" />
+    <Compile Include="Repositories\ThucPhamRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
