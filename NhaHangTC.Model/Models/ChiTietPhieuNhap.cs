@@ -34,7 +34,6 @@ namespace NhaHangTC.Model.Models
         public virtual TaiKhoan TaiKhoan { set; get; }
 
         [Required]
-        [MaxLength(50)]
         public int SOLUONGNHAP { set; get; }
 
         [Required]

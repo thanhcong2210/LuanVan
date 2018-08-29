@@ -16,7 +16,6 @@ namespace NhaHangTC.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MAGH { set; get; }
 
-        [Required]
         public int MAKH { set; get; }
 
         [ForeignKey("MAKH")]

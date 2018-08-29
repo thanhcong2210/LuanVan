@@ -15,7 +15,20 @@ namespace NhaHangTC.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MADONDAT { set; get; }
+        public int MADATBAN { set; get; }
+
+        public int MATAIKHOAN { set; get; }
+
+        [ForeignKey("MATAIKHOAN")]
+        public virtual TaiKhoan TaiKhoan { set; get; }
+
+        public int MAKH { set; get; }
+
+        [ForeignKey("MAKH")]
+        public virtual KhachHang KhachHang { set; get; }
+
+       [InverseProperty("MAKH")] // <- Navigation property name in EntityA
+       public virtual ICollection<KhachHang> KhachHangs { set; get; }
 
         [Required]
         public int SOLUONGNGUOI { set; get; }
@@ -29,17 +42,7 @@ namespace NhaHangTC.Model.Models
         [Required]
         public bool TRANGTHAIDONDAT { set; get; }
 
-        [Required]
-        public int MATAIKHOAN { set; get; }
-
-        [ForeignKey("MATAIKHOAN")]
-        public virtual TaiKhoan TaiKhoan { set; get; }
-
-        [Required]
-        public int MAKH { set; get; }
-
-        [ForeignKey("MAKH")]
-        public virtual KhachHang KhachHang { set; get; }
+        
 
         public virtual IEnumerable<DonDatBan> DonDatBans { set; get; }
     }

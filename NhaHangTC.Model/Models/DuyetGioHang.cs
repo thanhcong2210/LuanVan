@@ -29,11 +29,10 @@ namespace NhaHangTC.Model.Models
         public virtual GioHang GioHang { set; get; }
 
         [Required]
-        [MaxLength(50)]
+
         public DateTime NGAYDUYET { set; get; }
 
         [Required]
-        [MaxLength(50)]
         public bool TRANGTHAIDUYET { set; get; }
 
         public virtual IEnumerable<DuyetGioHang> DuyetGioHangs { set; get; }

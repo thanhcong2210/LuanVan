@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using NhaHangTC.Model.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace NhaHangTC.Data
 {
@@ -36,6 +37,7 @@ namespace NhaHangTC.Data
         public DbSet<NhanVien> NhanViens { set; get; }
         public DbSet<PhieuNhap> PhieuNhaps { set; get; }
         public DbSet<TaiKhoan> TaiKhoans { set; get; }
+        //public IDbSet<TaiKhoan> users { set; get; }
 
         public DbSet<Tang> Tangs { set; get; }
         public DbSet<ThucPham> ThucPhams { set; get; }
@@ -43,6 +45,14 @@ namespace NhaHangTC.Data
         public static NhaHangTCDbContext Create()
         {
             return new NhaHangTCDbContext();
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+           modelBuilder.Entity<DonDatBan>().HasRequired(d => d.KhachHang).WithOptional(k => k.DonDatBan).Map(l => l.MapKey("MAKH"));
+            //modelBuilder.Entity<KhachHang>().HasRequired(k => k.DonDatBan).WithMany().HasForeignKey(k => k.MADATBAN);
+            //modelBuilder.Entity<DonDatBan>().HasOptional(b => b.KhachHang).WithMany().HasForeignKey(b => b.MADATBAN);
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

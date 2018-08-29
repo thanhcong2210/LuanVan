@@ -17,6 +17,16 @@ namespace NhaHangTC.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MAKH { set; get; }
 
+        public int MALOAI_KH { set; get; }
+
+        [ForeignKey("MALOAI_KH")]
+        public virtual LoaiKhachHang LoaiKhachHang { set; get; }
+
+        public int MADATBAN { set; get; }
+
+        [ForeignKey("MADATBAN")]
+        public virtual DonDatBan DonDatBan { set; get; }
+
         [Required]
         [MaxLength(100)]
         public string HOTEN_KH { set; get; }
@@ -44,19 +54,6 @@ namespace NhaHangTC.Model.Models
  
         [MaxLength(50)]
         public string MATKHAU_KH { set; get; }
-
-        [Required]
-        public int MALOAI_KH { set; get; }
-
-        [ForeignKey("MALOAI_KH")]
-        public virtual LoaiKhachHang LoaiKhachHang { set; get; }
-
-        [Required]
-        public int MADATBAN { set; get; }
-
-        [ForeignKey("MADATBAN")]
-        public virtual DonDatBan DonDatBan { set; get; }
-
 
         public virtual IEnumerable<KhachHang> KhachHangs { set; get; }
     }

@@ -13,37 +13,12 @@ namespace NhaHangTC.Data.Repositories
     {
         IEnumerable<NhanVien> GetListNhanVienByCV(string tencv, int page, int pageSize, out int totalRow);
     }
-    public class NhanVienRepository : RepositoryBase<Ban>, INhanVienRepository
+    public class NhanVienRepository : RepositoryBase<NhanVien>, INhanVienRepository
     {
         public NhanVienRepository(IDbFactory dbFactory)
             : base(dbFactory)
         {
         }
-
-        //public NhanVien Add(NhanVien entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public bool CheckContains(Expression<Func<NhanVien, bool>> predicate)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public int Count(Expression<Func<NhanVien, bool>> where)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public NhanVien Delete(NhanVien entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public void DeleteMulti(Expression<Func<NhanVien, bool>> where)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public IEnumerable<NhanVien> GetListNhanVienByCV(string tencv, int page, int pageSize, out int totalRow)
         {
@@ -55,42 +30,7 @@ namespace NhaHangTC.Data.Repositories
             totalRow = query.Count();
 
             return query.OrderByDescending(x => x.MANV).Skip((page - 1) * pageSize).Take(pageSize);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
-
-        //public IEnumerable<NhanVien> GetMulti(Expression<Func<NhanVien, bool>> predicate, string[] includes = null)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public IEnumerable<NhanVien> GetMultiPaging(Expression<Func<NhanVien, bool>> filter, out int total, int index = 0, int size = 50, string[] includes = null)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public NhanVien GetSingleByCondition(Expression<Func<NhanVien, bool>> expression, string[] includes = null)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public void Update(NhanVien entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //NhanVien IRepository<NhanVien>.Delete(int id)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //IEnumerable<NhanVien> IRepository<NhanVien>.GetAll(string[] includes)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //NhanVien IRepository<NhanVien>.GetSingleById(int id)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

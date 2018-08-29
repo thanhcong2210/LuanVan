@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Security.Claims;
 
 namespace NhaHangTC.Model.Models
 {
-
-
     [Table("TAIKHOAN")]
     public class TaiKhoan
     {
@@ -38,6 +39,13 @@ namespace NhaHangTC.Model.Models
         [ForeignKey("MANV")]
         public virtual NhanVien NhanVien { set; get; }
 
+        //public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<TaiKhoan> manager, string authenticationType)
+        //{
+        //    // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
+        //    var taikhoanIdentity = await manager.CreateIdentityAsync(this, authenticationType);
+        //    // Add custom user claims here
+        //    return taikhoanIdentity;
+        //}
         public virtual IEnumerable<TaiKhoan> TaiKhoans { set; get; }
     }
 }

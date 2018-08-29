@@ -25,7 +25,7 @@ namespace NhaHangTC.Model.Models
         [ForeignKey("MAMON")]
         public virtual MonAn MonAn { set; get; }
 
-        [ForeignKey("MAGD")]
+        [ForeignKey("MAGH")]
         public virtual GioHang GioHang { set; get; }
     }
 }
