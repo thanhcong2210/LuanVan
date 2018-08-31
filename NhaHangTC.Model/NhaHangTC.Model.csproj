@@ -61,6 +61,7 @@
     <Compile Include="Models\DonDatBan.cs" />
     <Compile Include="Models\DonViTinh.cs" />
     <Compile Include="Models\DuyetGioHang.cs" />
+    <Compile Include="Models\Error.cs" />
     <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\HinhAnh.cs" />
     <Compile Include="Models\HoaDon.cs" />

@@ -71,6 +71,7 @@
     <Compile Include="Repositories\DonDatBanRepository.cs" />
     <Compile Include="Repositories\DonViTinhRepository.cs" />
     <Compile Include="Repositories\DuyetGioHangRepository.cs" />
+    <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\GioHangRepository.cs" />
     <Compile Include="Repositories\HinhAnhRepository.cs" />
     <Compile Include="Repositories\HoaDonRepository.cs" />
